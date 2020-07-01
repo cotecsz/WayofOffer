@@ -5,4 +5,17 @@ set(CMAKE_CXX_STANDARD 11)
 
 #add_executable(DataStructureImp main.cpp)
 
+# chapter_01_绪论
+add_executable(1_1_bubblesort chapter_01_绪论/1_1_bubblesort1A.cpp)
+add_executable(1_2_countOnes chapter_01_绪论/1_2_countOnes.cpp)
+add_executable(1_3_sumI chapter_01_绪论/1_3_sumI.cpp)
+add_executable(1_4_power2BF_I chapter_01_绪论/1_4_power2BF_I.cpp)
+add_executable(1_5_sum_linearRecursion chapter_01_绪论/1_5_sum_linearRecursion.cpp)
+add_executable(1_6_reverse chapter_01_绪论/1_6_reverse.cpp)
+add_executable(1_8_sqr_linearRecursion chapter_01_绪论/1_8_sqr_linearRecursion.cpp)
+add_executable(1_11_sum_binaryRecursion chapter_01_绪论/1_11_sum_binaryRecursion.cpp)
+add_executable(1_12_fib_binaryRecursion chapter_01_绪论/1_12_fib_binaryRecursion.cpp)
+add_executable(1_13_fib_linearRecursion chapter_01_绪论/1_13_fib_linearRecursion.cpp)
+add_executable(1_14_fib_dynamicProgramming chapter_01_绪论/1_14_fib_dynamicProgramming.cpp)
+
 add_executable(BSTree Tree/BinarySearchTree/BSTree.cpp)
