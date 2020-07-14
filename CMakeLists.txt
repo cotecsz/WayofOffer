@@ -19,3 +19,7 @@ add_executable(1_13_fib_linearRecursion chapter_01_绪论/1_13_fib_linearRecursi
 add_executable(1_14_fib_dynamicProgramming chapter_01_绪论/1_14_fib_dynamicProgramming.cpp)
 
 add_executable(BSTree Tree/BinarySearchTree/BSTree.cpp)
+
+# 1. 排序算法
+#add_executable(1_1_bubbleSortv1 1_排序算法/1-1_冒泡排序/bubbleSortV1.cpp)
+add_executable(bubbleSortTest 1_排序算法/1-1_冒泡排序/bubbleSortTest.cpp)
