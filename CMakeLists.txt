@@ -21,5 +21,8 @@ add_executable(1_14_fib_dynamicProgramming chapter_01_绪论/1_14_fib_dynamicPro
 add_executable(BSTree Tree/BinarySearchTree/BSTree.cpp)
 
 # 1. 排序算法
-#add_executable(1_1_bubbleSortv1 1_排序算法/1-1_冒泡排序/bubbleSortV1.cpp)
-add_executable(bubbleSortTest 1_排序算法/1-1_冒泡排序/bubbleSortTest.cpp)
+add_executable(1-1_bubbleSortTest 1_排序算法/1-1_冒泡排序/bubbleSortTest.cpp)
+
+# 2. 查找算法
+add_executable(2-1sequentialSearch 2_查找算法/2-1_顺序查找/sequentialSearch.cpp)
+add_executable(2-2_binSearch_loop 2_查找算法/2-2_二分查找/binSearchTest.cpp)
