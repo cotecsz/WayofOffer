@@ -26,3 +26,14 @@ add_executable(1-1_bubbleSortTest 1_排序算法/1-1_冒泡排序/bubbleSortTest
 # 2. 查找算法
 add_executable(2-1sequentialSearch 2_查找算法/2-1_顺序查找/sequentialSearch.cpp)
 add_executable(2-2_binSearch_loop 2_查找算法/2-2_二分查找/binSearchTest.cpp)
+
+# 3. 栈
+add_executable(3-1_StackImp 3_栈/3-1_StackImp.cpp)
+add_executable(3-2_stl_stack_basic_op 3_栈/3-2_stl_stack_basic_op.cpp)
+add_executable(leetcode_225_ImplementStackUsingQueue 3_栈/leetcode_225_ImplementStackUsingQueues.cpp)
+add_executable(leetcode_155_MinStack 3_栈/leetcode_155_MinStack.cpp)
+
+
+# 4. 队列
+add_executable(4-1_stl_queue_basic_op 4_队列/4-1_stl_queue_basic_op.cpp)
+add_executable(leetcode_232_ImplementQueueUsingStack 4_队列/leetcode_232_ImplementQueueUsingStack.cpp)
