@@ -32,8 +32,16 @@ add_executable(3-1_StackImp 3_栈/3-1_StackImp.cpp)
 add_executable(3-2_stl_stack_basic_op 3_栈/3-2_stl_stack_basic_op.cpp)
 add_executable(leetcode_225_ImplementStackUsingQueue 3_栈/leetcode_225_ImplementStackUsingQueues.cpp)
 add_executable(leetcode_155_MinStack 3_栈/leetcode_155_MinStack.cpp)
+add_executable(leetcode_946_ValidateStackSquence 3_栈/Leetcode_946_ValidateStackSequence.cpp)
 
 
 # 4. 队列
 add_executable(4-1_stl_queue_basic_op 4_队列/4-1_stl_queue_basic_op.cpp)
 add_executable(leetcode_232_ImplementQueueUsingStack 4_队列/leetcode_232_ImplementQueueUsingStack.cpp)
+
+
+# 5. 堆
+add_executable(5-1_stl_heap_basic_op 5_堆/5-1_stl_heap_basic_op.cpp)
+add_executable(Leetcode_215_KthLargestElementinArray 5_堆/Leetcode_215_KthLargestElementinArray.cpp)
+add_executable(Leetcode_295_FindMedianFromDataStream 5_堆/Leetcode_295_FindMedianFromDataStream.cpp)
+
