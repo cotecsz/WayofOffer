@@ -7,7 +7,7 @@
 #include <stack>
 using namespace std;
 
-/* leetcode 225: 用栈实现队列
+/* leetcode 225: 用队列实现栈
  *
  *    1. push()
  *    2. pop()
