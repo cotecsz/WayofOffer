@@ -6,7 +6,16 @@
 #include <iostream>
 using namespace std;
 
-
+/*
+ * Leetcode 86 分隔链表
+ *      基本思路：
+ *              1. 使用两个新的链表头：比元素大的greaterHead 比元素小的lessHead
+ *              2. 遍历链表，head = head->next
+ *              3. 比指定元素大则加入greaterHead 链表，比指定元素小加入 lessHead 链表
+ *              4. 最后分别处理 greaterHead链表和less链表的最后一个节点元素
+ *              5. 返回lessHead的下一个节点
+ *
+ */
 struct ListNode{
     int val;
     ListNode* next;
