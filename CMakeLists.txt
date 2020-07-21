@@ -48,9 +48,12 @@ add_executable(Leetcode_295_FindMedianFromDataStream 5_堆/Leetcode_295_FindMedi
 # 6. 链表
 add_executable(6-1_linklist_basic 6_链表/6-1_linklist_basic.cpp)
 add_executable(6-2_stl_set_basic_op 6_链表/6-2_stl-set_basic_op.cpp)
+add_executable(6-3_stl_map_basic_op 6_链表/6-3_stl_map_basic_op.cpp)
 add_executable(Leetcode_206_ReverseLinkedList 6_链表/Leetcode_206_ReverseLinkedList.cpp)
 add_executable(Leetcode_92_ReverseLinkedListII 6_链表/Leetcode_92_ReverseLinkedListII.cpp)
 add_executable(Leetcode_160_IntersectionofTwoLinkedList 6_链表/Leetcode_160_IntersectionofTwoLinkedLists.cpp)
 add_executable(Leetcode_142_IntersectionofTwoLinkedLists 6_链表/Leetcode_142_LinkedListCycleII.cpp)
 add_executable(Leetcode_86_PartitionList 6_链表/Leetcode_86_PartitionList.cpp)
-
+add_executable(Leetcode_138_CopyListwithRandomPointer 6_链表/Leetcode_138_CopyListwithRandomPointer.cpp)
+add_executable(Leetcode_21_MergeTwoSortedLists 6_链表/Leetcode_21_MergeTwoSortedLists.cpp)
+add_executable(Leetcode_23_MergeKSortedLists 6_链表/Leetcode_23_MergeKSortedLists.cpp)
