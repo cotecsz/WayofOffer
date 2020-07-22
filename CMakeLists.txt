@@ -57,3 +57,7 @@ add_executable(Leetcode_86_PartitionList 6_链表/Leetcode_86_PartitionList.cpp)
 add_executable(Leetcode_138_CopyListwithRandomPointer 6_链表/Leetcode_138_CopyListwithRandomPointer.cpp)
 add_executable(Leetcode_21_MergeTwoSortedLists 6_链表/Leetcode_21_MergeTwoSortedLists.cpp)
 add_executable(Leetcode_23_MergeKSortedLists 6_链表/Leetcode_23_MergeKSortedLists.cpp)
+
+
+# 7 贪心
+add_executable(Leetcode_455_AssignCookies 7_贪心/Leetcode_455_AssignCookies.cpp)
