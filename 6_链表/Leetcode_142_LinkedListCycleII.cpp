@@ -45,11 +45,11 @@ public:
         ListNode* slow = head;
         ListNode* meet = nullptr;
 
-        while(fast){
+        while(fast){            // 这里返回是偶数个节点
             slow = slow->next;
             fast = fast->next;
 
-            if(!fast){
+            if(!fast){          // 这里返回是奇数个节点
                 return nullptr;
             }
             fast = fast->next;
@@ -59,9 +59,9 @@ public:
             }
         }
 
-        if (meet == nullptr){
-            return nullptr;
-        }
+//        if (meet == nullptr){
+//            return nullptr;
+//        }
 
         while(head && meet){
             if(head == meet)
