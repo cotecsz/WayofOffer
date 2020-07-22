@@ -61,3 +61,4 @@ add_executable(Leetcode_23_MergeKSortedLists 6_链表/Leetcode_23_MergeKSortedLi
 
 # 7 贪心
 add_executable(Leetcode_455_AssignCookies 7_贪心/Leetcode_455_AssignCookies.cpp)
+add_executable(Leetcode_376_WiggleSubsequence 7_贪心/Leetcode_376_WiggleSubsequence.cpp)
