@@ -63,6 +63,11 @@ void merge(int arr[], int left, int mid, int right){
         arr[k++] = R[j++];
     }
 
+    cout << "merge(" << left << ", " << mid << ", " << right << ")  " ;
+    for (int n=left; n <= right; n++)
+        cout << arr[n] << " ";
+    cout << endl;
+
 }
 
 void mergeSort(int arr[], int left, int right){
@@ -71,9 +76,16 @@ void mergeSort(int arr[], int left, int right){
         int mid = (left + right) / 2;
 
         // 递归求解
-        cout << "mergeSort(" << left << ", " << mid << ")" << endl;
+        cout << "mergeSort(" << left << ", " << mid << ")  " ;
+        for (int n=left; n <= mid; n++)
+            cout << arr[n] << " ";
+        cout << endl;
         mergeSort(arr, left, mid);
-        cout << "mergeSort(" << mid+1 << ", " << right << ")" << endl;
+        cout << "mergeSort(" << mid+1 << ", " << right << ")  ";
+        for (int n=mid+1; n <= right; n++)
+            cout << arr[n] << " ";
+        cout << endl;
+
         mergeSort(arr, mid+1, right);
 
 
@@ -89,9 +101,9 @@ int main(){
     int arr[6] = {5, 1, 4, 2, 8, 4};
     mergeSort(arr, 0, 5);
 
-    for (auto i : arr)
-        cout << i << " ";
-    cout << endl;
+//    for (auto i : arr)
+//        cout << i << " ";
+//    cout << endl;
 
     return 0;
 }
