@@ -22,6 +22,7 @@ add_executable(BSTree Tree/BinarySearchTree/BSTree.cpp)
 
 # 1. 排序算法
 add_executable(1-1_bubbleSortTest 1_排序算法/1-1_冒泡排序/bubbleSortTest.cpp)
+add_executable(mergeSort.cpp 1_排序算法/1-2_归并排序/mergeSort.cpp)
 
 # 2. 查找算法
 add_executable(2-1sequentialSearch 2_查找算法/2-1_顺序查找/sequentialSearch.cpp)
@@ -62,3 +63,4 @@ add_executable(Leetcode_23_MergeKSortedLists 6_链表/Leetcode_23_MergeKSortedLi
 # 7 贪心
 add_executable(Leetcode_455_AssignCookies 7_贪心/Leetcode_455_AssignCookies.cpp)
 add_executable(Leetcode_376_WiggleSubsequence 7_贪心/Leetcode_376_WiggleSubsequence.cpp)
+add_executable(Leetcode_402_RemoveKDigits 7_贪心/Leetcode_402_RemoveKDigits.cpp)
