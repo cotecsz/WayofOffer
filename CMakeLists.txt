@@ -70,3 +70,4 @@ add_executable(Leetcode_402_RemoveKDigits 7_贪心/Leetcode_402_RemoveKDigits.cp
 add_executable(8_mergeSort 8_分而治之/mergeSort.cpp)
 add_executable(Leetcode_53_MaxiumSubarray 8_分而治之/Leetcode_53_MaxiumSubarray.cpp)
 add_executable(Leetcode_51_ReversePairs 8_分而治之/Leetcode_51_ReversePairs.cpp)
+add_executable(kthLower 8_分而治之/KthLower.cpp)
