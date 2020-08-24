@@ -22,7 +22,8 @@ add_executable(BSTree Tree/BinarySearchTree/BSTree.cpp)
 
 # 1. 排序算法
 add_executable(1-1_bubbleSortTest 1_排序算法/1-1_冒泡排序/bubbleSortTest.cpp)
-add_executable(mergeSort.cpp 1_排序算法/1-2_归并排序/mergeSort.cpp)
+add_executable(mergeSort 1_排序算法/1-2_归并排序/mergeSort.cpp)
+add_executable(quickSort 1_排序算法/1-3_快速排序/quickSort.cpp)
 
 # 2. 查找算法
 add_executable(2-1sequentialSearch 2_查找算法/2-1_顺序查找/sequentialSearch.cpp)
@@ -66,6 +67,6 @@ add_executable(Leetcode_376_WiggleSubsequence 7_贪心/Leetcode_376_WiggleSubseq
 add_executable(Leetcode_402_RemoveKDigits 7_贪心/Leetcode_402_RemoveKDigits.cpp)
 
 # 8 分而治之
-add_executable(mergeSort 8_分而治之/mergeSort.cpp)
+add_executable(8_mergeSort 8_分而治之/mergeSort.cpp)
 add_executable(Leetcode_53_MaxiumSubarray 8_分而治之/Leetcode_53_MaxiumSubarray.cpp)
 add_executable(Leetcode_51_ReversePairs 8_分而治之/Leetcode_51_ReversePairs.cpp)
