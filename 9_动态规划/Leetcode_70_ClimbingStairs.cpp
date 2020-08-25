@@ -4,7 +4,10 @@
 
 #include <vector>
 
-
+/*
+ * Leetcode 70: 爬楼梯
+ *      思路：dp[n] = dp[n-1] + dp[n-2]
+ */
 class Solution{
 public:
     int climbStairs(int n){
