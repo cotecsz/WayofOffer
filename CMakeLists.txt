@@ -75,4 +75,5 @@ add_executable(kthLower 8_分而治之/KthLower.cpp)
 # 9 动态规划
 add_executable(Leetcode_70_ClimbingStairs 9_动态规划/Leetcode_70_ClimbingStairs.cpp)
 add_executable(Leetcode_198_HouseRobber 9_动态规划/Leetcode_198_HouseRobber.cpp)
-add_executable(LeetCode_153_MaximumSubarray 9_动态规划/Leetcode_153_MaximumSubarray.cpp)
+add_executable(Leetcode_153_MaximumSubarray 9_动态规划/Leetcode_153_MaximumSubarray.cpp)
+add_executable(Leetcode_322_CoinChange 9_动态规划/Leetcode_322_CoinChange.cpp)
