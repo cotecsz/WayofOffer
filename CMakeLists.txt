@@ -71,3 +71,6 @@ add_executable(8_mergeSort 8_分而治之/mergeSort.cpp)
 add_executable(Leetcode_53_MaxiumSubarray 8_分而治之/Leetcode_53_MaxiumSubarray.cpp)
 add_executable(Leetcode_51_ReversePairs 8_分而治之/Leetcode_51_ReversePairs.cpp)
 add_executable(kthLower 8_分而治之/KthLower.cpp)
+
+# 9 动态规划
+add_executable(Leetcode_70_ClimbingStairs 9_动态规划/Leetcode_70_ClimbingStairs.cpp)
