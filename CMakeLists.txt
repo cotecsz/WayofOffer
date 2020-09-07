@@ -77,3 +77,13 @@ add_executable(Leetcode_70_ClimbingStairs 9_动态规划/Leetcode_70_ClimbingSta
 add_executable(Leetcode_198_HouseRobber 9_动态规划/Leetcode_198_HouseRobber.cpp)
 add_executable(Leetcode_153_MaximumSubarray 9_动态规划/Leetcode_153_MaximumSubarray.cpp)
 add_executable(Leetcode_322_CoinChange 9_动态规划/Leetcode_322_CoinChange.cpp)
+
+
+# 10 字符串
+add_executable(1_01_IsUnique 10_字符串/1_01_IsUnique.cpp)
+add_executable(1_02_CheckPermutation 10_字符串/1_02_CheckPermutation.cpp)
+add_executable(1_03_String2URL 10_字符串/1_03_String2URL.cpp)
+add_executable(1_04_ValidPalindrome 10_字符串/1_04_ValidPalindrome.cpp)
+add_executable(1_05_OneEditAway 10_字符串/1_05_OneEditAway.cpp)
+add_executable(1_06_CompressString 10_字符串/1_06_CompressString.cpp)
+add_executable(Leetcode_344_ReverseString 10_字符串/Leetcode_344_ReverseString.cpp)
