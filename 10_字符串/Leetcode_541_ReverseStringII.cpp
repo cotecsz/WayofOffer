@@ -18,7 +18,7 @@ public:
 
     void reverse(std::string& s, int start, int end){
         int offset = (end - start + 1) / 2;         // end-start+1
-        for (int i=start, j=end; i < start+offset; i++, j--){
+        for (int i=start, j=end; i < start+offset; i++, j--){   // i < start+offset == i < j
             std::swap(s[i], s[j]);
         }
     }
