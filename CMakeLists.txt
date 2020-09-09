@@ -89,3 +89,7 @@ add_executable(1_06_CompressString 10_字符串/1_06_CompressString.cpp)
 add_executable(Leetcode_344_ReverseString 10_字符串/Leetcode_344_ReverseString.cpp)
 add_executable(05_ReplaceSpace 剑指offer/05_ReplaceSpace.cpp)
 add_executable(Leetcode_541_ReverseStringII 10_字符串/Leetcode_541_ReverseStringII.cpp)
+add_executable(58_II_ReverseLeftWords 剑指offer/58_II_ReverseLeftWords.cpp)
+
+# 11 数组
+add_executable(Leetcode_35_SearchInsertPos 11_数组/Leetcode_35_SearchInsertPos.cpp)
