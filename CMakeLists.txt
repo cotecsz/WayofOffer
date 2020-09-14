@@ -35,6 +35,7 @@ add_executable(3-2_stl_stack_basic_op 3_栈/3-2_stl_stack_basic_op.cpp)
 add_executable(leetcode_225_ImplementStackUsingQueue 3_栈/leetcode_225_ImplementStackUsingQueues.cpp)
 add_executable(leetcode_155_MinStack 3_栈/leetcode_155_MinStack.cpp)
 add_executable(leetcode_946_ValidateStackSquence 3_栈/Leetcode_946_ValidateStackSequence.cpp)
+add_executable(Leetcode_20_ValidParentheses 3_栈/Leetcode_20_ValidParentheses.cpp)
 
 
 # 4. 队列
@@ -91,5 +92,8 @@ add_executable(05_ReplaceSpace 剑指offer/05_ReplaceSpace.cpp)
 add_executable(Leetcode_541_ReverseStringII 10_字符串/Leetcode_541_ReverseStringII.cpp)
 add_executable(58_II_ReverseLeftWords 剑指offer/58_II_ReverseLeftWords.cpp)
 
+add_executable(KMP 10_字符串/KMP.cpp)
+
 # 11 数组
 add_executable(Leetcode_35_SearchInsertPos 11_数组/Leetcode_35_SearchInsertPos.cpp)
+add_executable(Leetcode_27_RemoveElement 11_数组/Leetcode_27_RemoveElement.cpp)
