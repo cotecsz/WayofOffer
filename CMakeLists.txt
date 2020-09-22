@@ -36,6 +36,7 @@ add_executable(leetcode_225_ImplementStackUsingQueue 3_栈/leetcode_225_Implemen
 add_executable(leetcode_155_MinStack 3_栈/leetcode_155_MinStack.cpp)
 add_executable(leetcode_946_ValidateStackSquence 3_栈/Leetcode_946_ValidateStackSequence.cpp)
 add_executable(Leetcode_20_ValidParentheses 3_栈/Leetcode_20_ValidParentheses.cpp)
+add_executable(Leetcode_1047_RemoveAllAdjacentDuplicatesinString 3_栈/Leetcode_1047_RemoveAllAdjacentDuplicatesinString.cpp)
 
 
 # 4. 队列
@@ -78,7 +79,6 @@ add_executable(Leetcode_70_ClimbingStairs 9_动态规划/Leetcode_70_ClimbingSta
 add_executable(Leetcode_198_HouseRobber 9_动态规划/Leetcode_198_HouseRobber.cpp)
 add_executable(Leetcode_153_MaximumSubarray 9_动态规划/Leetcode_153_MaximumSubarray.cpp)
 add_executable(Leetcode_322_CoinChange 9_动态规划/Leetcode_322_CoinChange.cpp)
-
 
 # 10 字符串
 add_executable(1_01_IsUnique 10_字符串/1_01_IsUnique.cpp)
