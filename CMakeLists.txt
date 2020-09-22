@@ -97,3 +97,8 @@ add_executable(KMP 10_字符串/KMP.cpp)
 # 11 数组
 add_executable(Leetcode_35_SearchInsertPos 11_数组/Leetcode_35_SearchInsertPos.cpp)
 add_executable(Leetcode_27_RemoveElement 11_数组/Leetcode_27_RemoveElement.cpp)
+
+# 12 树
+add_executable(Leetcode_144_BinaryTreePreorderTraversal 12_树/Leetcode_144_BinaryTreePreorderTraversal.cpp)
+add_executable(Leetcode_145_BinaryTreePostorderTraversal 12_树/Leetcode_145_BinaryTreePostorderTraversal.cpp)
+add_executable(Leetcode_94_BinaryTreeInorderTraversal 12_树/Leetcode_94_BinaryTreeInorderTraversal.cpp)
