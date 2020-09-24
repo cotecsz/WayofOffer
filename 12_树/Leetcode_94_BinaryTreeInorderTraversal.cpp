@@ -3,6 +3,8 @@
 //
 
 #include <vector>
+#include <stack>
+
 struct TreeNode{
     int val;
     TreeNode* left;
@@ -29,6 +31,35 @@ public:
     }
 };
 
+/*
+ * 中序遍历迭代版本：
+ *      基本思路：利用指针和栈遍历二叉树。
+ */
+class SolutionIteration{
+public:
+    std::vector<int> inorderTraversal(TreeNode* root){
+        std::vector<int> res;
+        std::stack<TreeNode*> st;
+        TreeNode* curr = root;
+
+        while (!st.empty() || curr != nullptr){
+            if (curr != nullptr){
+                st.push(curr);
+                curr = curr->left;          // 左
+            }
+            else{
+                curr = st.top();
+                st.pop();
+                res.push_back(curr->val);   // 中
+
+                curr = curr->right;         // 右
+            }
+        }
+
+        return res;
+    }
+};
+
 int main(){
     TreeNode a(0);
     TreeNode b(1);
@@ -48,4 +79,9 @@ int main(){
     std::vector<int> res = {3, 1, 4, 0, 5, 2, 6};
     Solution sol;
     assert(sol.inorderTraversal(&a) == res );
+
+    SolutionIteration solIter;
+    assert(solIter.inorderTraversal(&a) == res);
+
+    return 0;
 }
