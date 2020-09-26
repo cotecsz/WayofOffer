@@ -57,6 +57,40 @@ public:
     }
 };
 
+/*
+ * 后序遍历的迭代版本 标记法
+ */
+class SolutionIterationMark{
+public:
+    std::vector<int> postorderTraversal(TreeNode* root){
+        std::vector<int> res;
+        std::stack<TreeNode*> st;
+        if (root != nullptr)    st.push(root);
+
+        while (!st.empty()){
+            TreeNode* node = st.top();
+            if (node != nullptr){
+                st.pop();
+
+                st.push(node);
+                st.push(nullptr);
+                if (node->right)    st.push(node->right);
+                if (node->left)     st.push(node->left);
+            }
+            else{
+                st.pop();
+
+                node = st.top();
+                st.pop();
+                res.push_back(node->val);
+            }
+        }
+
+        return res;
+    }
+};
+
+
 int main(){
     TreeNode a(0);
     TreeNode b(1);
@@ -80,5 +114,7 @@ int main(){
     SolutionIteration solIter;
     assert(solIter.postorderTraversal(&a) == res);
 
+    SolutionIterationMark solIterMark;
+    assert(solIterMark.postorderTraversal(&a) == res);
     return 0;
 }

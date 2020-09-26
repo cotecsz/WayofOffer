@@ -60,6 +60,38 @@ public:
     }
 };
 
+/*
+ * 中序遍历统一迭代方式：标记法
+ */
+class SolutionIterationMark{
+public:
+    std::vector<int> inorderTraversal(TreeNode* root){
+        std::vector<int> res;
+        std::stack<TreeNode*> st;
+        if (root != nullptr)    st.push(root);
+
+        while (!st.empty()){
+            TreeNode* node = st.top();
+            if (node != nullptr){
+                st.pop();
+
+                if (node->right)    st.push(node->right);       // 右
+                st.push(node);      st.push(nullptr);        // 中， 标记
+
+                if (node->left)     st.push(node->left);        // 左
+            }
+            else{
+                st.pop();
+                node = st.top();
+                st.pop();
+
+                res.push_back(node->val);
+            }
+        }
+
+        return res;
+    }
+};
 int main(){
     TreeNode a(0);
     TreeNode b(1);
@@ -83,5 +115,7 @@ int main(){
     SolutionIteration solIter;
     assert(solIter.inorderTraversal(&a) == res);
 
+    SolutionIterationMark solIterMark;
+    assert(solIterMark.inorderTraversal(&a) == res);
     return 0;
 }

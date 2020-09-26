@@ -54,6 +54,39 @@ public:
     }
 };
 
+/*
+ * 先序遍历的迭代法统一版本
+ */
+class SolutionIterationMark{
+public:
+    std::vector<int> preindorderTraversal(TreeNode* root){
+        std::vector<int> res;
+        std::stack<TreeNode*> st;
+        if (root != nullptr)    st.push(root);
+
+        while(!st.empty()){
+            TreeNode* node = st.top();
+            if (node != nullptr){
+                st.pop();
+
+                if (node->right)    st.push(node->right);
+                if (node->left)     st.push(node->left);
+                st.push(node);
+                st.push(nullptr);
+            }
+            else{
+                st.pop();
+
+                node = st.top();
+                st.pop();
+                res.push_back(node->val);
+            }
+        }
+
+        return res;
+    }
+};
+
 int main(){
     TreeNode a(0);
     TreeNode b(1);
@@ -80,6 +113,9 @@ int main(){
     SolutionIteration solIter;
     assert(solIter.preorderTraversal(&a) == res);
 
+    // 标记法 迭代版本
+    SolutionIterationMark solIterMark;
+    assert(solIterMark.preindorderTraversal(&a) == res);
     return 0;
 }
 
