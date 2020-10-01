@@ -67,6 +67,7 @@ add_executable(Leetcode_23_MergeKSortedLists 6_链表/Leetcode_23_MergeKSortedLi
 add_executable(Leetcode_455_AssignCookies 7_贪心/Leetcode_455_AssignCookies.cpp)
 add_executable(Leetcode_376_WiggleSubsequence 7_贪心/Leetcode_376_WiggleSubsequence.cpp)
 add_executable(Leetcode_402_RemoveKDigits 7_贪心/Leetcode_402_RemoveKDigits.cpp)
+add_executable(Leetcode_322_CoinChangeDFS 7_贪心/Leetcode_322_CoinChange.cpp)
 
 # 8 分而治之
 add_executable(8_mergeSort 8_分而治之/mergeSort.cpp)

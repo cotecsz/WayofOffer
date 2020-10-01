@@ -66,7 +66,7 @@ int main(){
 
     SolutionIterationQueue solIterQueue;
     assert(sol.maxDepth(&a) == 3);
-    
+
     return 0;
 }
 
