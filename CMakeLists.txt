@@ -80,6 +80,7 @@ add_executable(Leetcode_70_ClimbingStairs 9_动态规划/Leetcode_70_ClimbingSta
 add_executable(Leetcode_198_HouseRobber 9_动态规划/Leetcode_198_HouseRobber.cpp)
 add_executable(Leetcode_153_MaximumSubarray 9_动态规划/Leetcode_153_MaximumSubarray.cpp)
 add_executable(Leetcode_322_CoinChange 9_动态规划/Leetcode_322_CoinChange.cpp)
+add_executable(Leetcode_322_CoinChangeMemory 9_动态规划/Leetcode_322_CoinChangeMemory.cpp)
 
 # 10 字符串
 add_executable(1_01_IsUnique 10_字符串/1_01_IsUnique.cpp)
