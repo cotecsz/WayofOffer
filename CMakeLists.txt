@@ -124,8 +124,9 @@ add_executable(Leetcode_513_FindBottomLeftTreeValue 12_树/Leetcode_513_FindBott
 add_executable(Leetcode_112_PathSum 12_树/Leetcode_112_PathSum.cpp)
 add_executable(Leetcode_113_PathSumII 12_树/Leetcode_113_PathSumII.cpp)
 
+# 构造二叉树
 add_executable(Leetcode_106_ConstructorBinaryTreeFromInorderAndPostorderTraversal 12_树/Leetcode_106_ConstructorBinaryTreeFromInorderAndPostorderTraversal.cpp)
-
+add_executable(Leetcode_105_ConstructorBinaryTreeFromInorderAndPreorderTraversal 12_树/Leetcode_105_ConstructorBinaryTreeFromInorderAndPreorderTraversal.cpp)
 
 
 
