@@ -22,6 +22,8 @@ add_executable(BSTree Tree/BinarySearchTree/BSTree.cpp)
 
 # 1. 排序算法
 add_executable(1-1_bubbleSortTest 1_排序算法/1-1_冒泡排序/bubbleSortTest.cpp)
+add_executable(LinkedListBubbleSort 1_排序算法/1-1_冒泡排序/LinkedListBubbleSort.cpp)
+
 add_executable(mergeSort 1_排序算法/1-2_归并排序/mergeSort.cpp)
 add_executable(quickSort 1_排序算法/1-3_快速排序/quickSort.cpp)
 
@@ -128,6 +130,7 @@ add_executable(Leetcode_113_PathSumII 12_树/Leetcode_113_PathSumII.cpp)
 add_executable(Leetcode_106_ConstructorBinaryTreeFromInorderAndPostorderTraversal 12_树/Leetcode_106_ConstructorBinaryTreeFromInorderAndPostorderTraversal.cpp)
 add_executable(Leetcode_105_ConstructorBinaryTreeFromInorderAndPreorderTraversal 12_树/Leetcode_105_ConstructorBinaryTreeFromInorderAndPreorderTraversal.cpp)
 
-
+# 二叉搜索树
+add_executable(Leetcode_700_SearchinABinarySearchTree 12_树/Leetcode_700_SearchinABinarySearchTree.cpp)
 
 
