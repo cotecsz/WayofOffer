@@ -134,4 +134,6 @@ add_executable(Leetcode_617_MergeTwoBinaryTree 12_树/Leetcode_617_MergeTwoBinar
 # 二叉搜索树
 add_executable(Leetcode_700_SearchinABinarySearchTree 12_树/Leetcode_700_SearchinABinarySearchTree.cpp)
 add_executable(Leetcode_78_ValidateBinarySearchTree 12_树/Leetcode_78_ValidateBinarySearchTree.cpp)
+add_executable(Leetcode_530_MinmumAbsoluteDifferenceinBST 12_树/Leetcode_530_MinmumAbsoluteDifferenceinBST.cpp)
+
 
