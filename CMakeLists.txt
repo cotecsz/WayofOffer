@@ -70,6 +70,7 @@ add_executable(Leetcode_455_AssignCookies 7_贪心/Leetcode_455_AssignCookies.cp
 add_executable(Leetcode_376_WiggleSubsequence 7_贪心/Leetcode_376_WiggleSubsequence.cpp)
 add_executable(Leetcode_402_RemoveKDigits 7_贪心/Leetcode_402_RemoveKDigits.cpp)
 add_executable(Leetcode_322_CoinChangeDFS 7_贪心/Leetcode_322_CoinChange.cpp)
+add_executable(Leetcode_452_MinimumNumberofArrowstoBurstBalloons 7_贪心/Leetcode_452_MinimumNumberofArrowstoBurstBalloons.cpp)
 
 # 8 分而治之
 add_executable(8_mergeSort 8_分而治之/mergeSort.cpp)
