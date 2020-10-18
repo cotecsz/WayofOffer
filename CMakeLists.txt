@@ -85,6 +85,11 @@ add_executable(Leetcode_153_MaximumSubarray 9_动态规划/Leetcode_153_MaximumS
 add_executable(Leetcode_322_CoinChange 9_动态规划/Leetcode_322_CoinChange.cpp)
 add_executable(Leetcode_322_CoinChangeMemory 9_动态规划/Leetcode_322_CoinChangeMemory.cpp)
 
+    # 方案问题：不同路径
+add_executable(Leetcode_62_UniquePath 9_动态规划/Leetcode_62_UniquePath.cpp)
+add_executable(Leetcode_63_UniquePathII 9_动态规划/Leetcode_63_UniquePathII.cpp)
+
+
 # 10 字符串
 add_executable(1_01_IsUnique 10_字符串/1_01_IsUnique.cpp)
 add_executable(1_02_CheckPermutation 10_字符串/1_02_CheckPermutation.cpp)
