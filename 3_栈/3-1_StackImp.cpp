@@ -18,7 +18,8 @@ const int N = 100005;
 
 
 string Stack[N];
-int n, top;
+const int n = 0;
+int top = 0;
 
 
 void push(string name){
