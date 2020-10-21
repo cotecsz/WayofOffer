@@ -1,0 +1,3 @@
+project(剑指offer)
+add_executable(03-DuplicateNumberInArray 03-DuplicateNumberInArray.cpp)
+add_link_options(03-DuplicateNumberInArray DataStructureImp)
