@@ -147,7 +147,7 @@ add_executable(Leetcode_501_FindModeinBinarySearchTree 12_树/Leetcode_501_FindM
 add_executable(Leetcode_235_LowestCommonAncestorOfABST 12_树/Leetcode_235_LowestCommonAncestorOfABST.cpp)
 add_executable(Leetcode_701_InsertIntoABST 12_树/Leetcode_701_InsertIntoABST.cpp)
 add_executable(Leetcode_450_DeleteNodeInBST 12_树/Leetcode_450_DeleteNodeInBST.cpp)
-
+add_executable(Leetcode_669_TrimABST 12_树/Leetcode_669_TrimABST.cpp)
 
 # 二叉树
 add_executable(Leetcode_236_LowestCommonAncestorOfABinaryTree 12_树/Leetcode_236_LowestCommonAncestorOfABinaryTree.cpp)
