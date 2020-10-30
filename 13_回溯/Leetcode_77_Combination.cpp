@@ -47,6 +47,41 @@ private:
     }
 };
 
+/*
+ * 组合：
+ *     剪枝优化：对于无需搜索的分支直接剪除。
+ *     (4, 2) ---> n - (k - path.size()) +1 ---> 3
+ */
+class SolutionPrune {
+public:
+    std::vector<std::vector<int>> combine(int n, int k) {
+        path.clear();
+        res.clear();
+        backtracing(n, k, 1);
+        return res;
+    }
+
+private:
+    std::vector<int> path;
+    std::vector<std::vector<int>> res;
+
+    void backtracing(int n, int k, int startIndex){
+        if (path.size() == 2){
+            res.push_back(path);
+            return ;
+        }
+
+        // n = 4, k = 3
+        // 还需要的组合数 ： k - path.size()   3 - 0 = 3
+        // n - (k - path.size()) + 1           4 - 3 + 1 = 1+1 = 2
+        for (int i=startIndex; i<= n - (k -path.size()) + 1; i++){
+            path.push_back(i);
+            backtracing(n, k, i+1);
+            path.pop_back();
+        }
+    }
+};
+
 int main(){
     std::vector<int> a{12, 13};
     std::vector<std::vector<int>> res {  {1, 2},
@@ -58,5 +93,8 @@ int main(){
                                          };
     Solution sol;
     assert(sol.combine(4, 2) == res);
+
+    SolutionPrune solPru;
+    assert(solPru.combine(4, 2) == res);
     return 0;
 }
