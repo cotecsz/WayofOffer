@@ -3,6 +3,7 @@
 //
 
 #include <stack>
+#include <vector>
 
 struct TreeNode{
     int val;
@@ -13,24 +14,48 @@ struct TreeNode{
 
 class Solution {
 public:
+//    bool hasPathSum(TreeNode* root, int sum) {
+//        if (root == nullptr)    return false;
+//        if (!root->left && !root->right && sum == 0)    return true;
+//
+//        if (root->left){
+//            if (hasPathSum(root->left, sum - root->left->val)){     // 回溯
+//                return true;
+//            }
+//        }
+//        if (root->right){
+//            if (hasPathSum(root->right, sum - root->right->val)){
+//                return true;
+//            }
+//        }
+//
+//        return false;
+//    }
     bool hasPathSum(TreeNode* root, int sum) {
-        if (root == nullptr)    return false;
-        if (!root->left && !root->right && sum == 0)    return true;
+        if (root == nullptr)     return false;
 
-        if (root->left){
-            if (hasPathSum(root->left, sum - root->left->val)){     // 回溯
-                return true;
-            }
-        }
-        if (root->right){
-            if (hasPathSum(root->right, sum - root->right->val)){
-                return true;
-            }
+        return traversal(root, sum-root->val);
+
+    }
+
+    bool traversal(TreeNode* root, int sum){
+        if (!root->left && !root->right && sum == 0){
+            return true;
         }
 
-        return false;
+        if (!root->left && !root->left){
+            return false;
+        }
+
+        bool left = false;
+        bool right = false;
+        if (root->left)     left = traversal(root->left, sum - root->left->val);
+        if (root->right)    right = traversal(root->right, sum - root->right->val);
+
+        return left || right;
     }
 };
+
 
 class SolutionIterationPreorder {
 public:
@@ -54,6 +79,22 @@ public:
 
         return false;
     }
+
+    std::vector<int> preorder(TreeNode* root){
+        std::stack<TreeNode*> st;
+        std::vector<int> res;
+        if (root != nullptr)    st.push(root);
+
+        while (!st.empty()){
+            TreeNode* node = st.top();      st.pop();
+
+            res.push_back(node->val);
+            if (node->left)     st.push(node->left);
+            if (node->right)     st.push(node->right);
+        }
+        std::reverse(res.begin(), res.end());
+        return res;
+    }
 };
 int main(){
     TreeNode a(0);
@@ -72,10 +113,18 @@ int main(){
     c.right = &g;
 
     Solution sol;
-    assert(sol.hasPathSum(&a, 5));
+//    assert(sol.hasPathSum(&a, 5));
 
     SolutionIterationPreorder solPreodr;
     assert(solPreodr.hasPathSum(&a, 5));
+
+    solPreodr.preorder(&a);
+
+    TreeNode m(-3);
+    TreeNode n(-2);
+    m.right = &a;
+
+    assert(sol.hasPathSum(&m, -5));
 
     return 0;
 }
